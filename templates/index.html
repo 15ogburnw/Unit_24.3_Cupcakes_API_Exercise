@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcakes</title>
+    <!-- CSS only -->
+    <!-- <link rel="stylesheet" href="/static/cupcakes.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+
+    <div class="container">
+
+        <div class="display-1 text-center text-light mb-4">Cupcakes</div>
+
+        <div id="cupcakes-list" class="row justify-content-center">
+            
+        </div>
+
+
+        
+
+        <div class="row justify-content-center">
+            <h2 class="text-light text-center mt-5"> Add a Cupcake </h2>
+            <form class="col-6" id="cupcake-form">
+                <div class="form-group">
+                    <label for="flavor" class="text-light my-2"><b>Flavor:</b></label>
+                    <input type="text" name="flavor" id="flavor" class="form-control" placeholder="Enter a Flavor" required>
+                </div>
+                <div class="form-group">
+                    <label for="size" class="text-light my-2"><b>Size:</b></label>
+                    <input type="text" name="size" id="size" class="form-control" placeholder="Enter a Size" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating" class="text-light my-2"><b>Rating:</b></label>
+                    <input type="number" max="10" min="0" name="rating" id="rating" class="form-control" placeholder="Rate the Cupcake" required>
+                </div>
+                <div class="form-group">
+                    <label for="image" class="text-light my-2"><b>Image URL:</b></label>
+                    <input type="text" name="image" id="image" class="form-control" placeholder="Enter an Image URL">
+                </div>
+                <button class="btn btn-success mt-3">Submit</button>
+            </form>
+        </div>
+    
+    </div>
+
+
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="/static/cupcakes.js"></script>
+</body>
+</html>
